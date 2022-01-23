@@ -1,0 +1,17 @@
+<%- include('layouts/header') %>
+
+    <main>
+        <%- include('layouts/aside') %>
+        
+        <div class="content">
+        
+            <% for(var i=0; i<data.length; i++) {%>
+            <h2><%= data[i].title %></h2>
+            <p><%= data[i].content %></p>
+            <% } %>
+
+        </div>
+        
+    </main>
+</body>
+</html>

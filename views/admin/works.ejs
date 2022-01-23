@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header class="admin-header flx">
+        
+        <div class="logo">
+            <h1>Админ панель</h1>
+        </div>
+
+        
+    </header>
+    
+    <main class="flx admin-main">
+
+        <%- include('../layouts/admin-aside') %>
+    
+
+    <div class="content">
+        
+        <div class="titles">
+            <h2>Работы</h2>
+        </div>
+
+        <div class="titles">
+            <h3>Список всех работ</h3>
+        </div>
+
+        <div class="editing flx">
+            
+            <div class="add-button">
+                <a href="/admin/works/new" class="add btnn">Новая</a>
+            </div>
+            <div class="edit-button">
+                <a href="/admin/works/edit" class="edit-button btnn">Редактировать</a>
+            </div>
+            <form method="post" action="/admin/works/delete">
+            <div class="delete-button">
+                <!-- <a href="/new" class="delete btnn">Удалить отмеченное</a> -->
+                <input type="submit" value="Удалить отмеченное" class="btnn delete">
+            </div>
+
+
+        </div>
+
+        <table class="admin-table">
+            <tr class="table-heading">
+                <td>id</td>
+                <td>картинка</td>
+                <td>заголовок</td>
+                <td>текст</td>
+                <td>редактирование</td>
+                <td>отметить</td>
+            </tr>
+          
+            <% for(var i=0; i<data.length; i++) {%>
+            <tr>
+                <td># <%= i %></td>
+                <td>
+                    <img src="<%= data[i].image %>" alt="">
+                </td>
+                <td><%= data[i].title %></td>
+                <td class="table-text"><%= data[i].content %></td>
+                <td class="edit">
+                    <i class="fa fa-edit"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <input type="checkbox" name="check" id=""  value="<%= data[i]._id %>">
+                </td>
+            </tr>
+            <% } %>
+        </form>
+            
+            <!-- <tr>
+                <td># 2</td>
+                <td>
+                    <img src="../../freud.jpg" alt="">
+                </td>
+                <td>Введение В Психоанализ</td>
+                <td class="table-text">Зигмунд Фрейд (Сигизмунд Шломо Фрейд) (1856 – 1939) - австрийский врач и психолог, основатель теории и метода лечения...</td>
+                <td class="edit">
+                    <i class="fa fa-edit"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <input type="checkbox" name="" id="">
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td># 3</td>
+                <td>
+                    <img src="../../freud.jpg" alt="">
+                </td>
+                <td>Введение В Психоанализ</td>
+                <td class="table-text">Зигмунд Фрейд (Сигизмунд Шломо Фрейд) (1856 – 1939) - австрийский врач и психолог, основатель теории и метода лечения...</td>
+                <td class="edit">
+                    <i class="fa fa-edit"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <input type="checkbox" name="" id="">
+                </td>
+            </tr> -->
+
+
+
+        </table>
+
+        
+    </div>
+
+    </main>
+
+</body>
+</html>

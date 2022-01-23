@@ -1,0 +1,32 @@
+<%- include('layouts/header') %>
+<main>
+<%- include('layouts/aside') %>
+
+<div class="register-content">
+
+    <form action="/register" method="POST">
+        
+        <div class="inputs">
+            Name: <input type="text" name="name">
+        </div>
+        <div class="inputs">
+            Email: <input type="text" name="email">
+        </div>
+        <div class="inputs">
+            Username: <input type="text" name="username">
+        </div>
+        <div class="inputs">
+            Password: <input type="password" name="password">
+        </div>
+        <div class="inputs">
+            Confirm: <input type="password" name="password2">
+        </div>
+        <div class="inputs">
+            <input type="submit" name="submit" value="Register">
+        </div>
+
+    </form>
+
+</div>
+
+</main>

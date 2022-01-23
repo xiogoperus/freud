@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header class="admin-header flx">
+        
+        <div class="logo">
+            <h1>Админ панель</h1>
+        </div>
+
+        <nav>
+
+            <ul>
+                <li>
+                    <a href="/admin/home">главная</a>
+                </li>
+                <li>
+                    <a href="#">работы</a>
+                </li>
+                <li>
+                    <a href="#">статьи</a>
+                </li>
+                <li>
+                    <a href="#">Обучение</a>
+                </li>
+                <li>
+                    <a href="#">видео</a>
+                </li>
+                <li>
+                    <a href="#">ВиО</a>
+                </li>
+
+
+
+                <li>
+                    <a href="#">пользователи</a>
+                </li>
+                <li>
+                    <a href="#">оплата</a>
+                </li>
+                <li>
+                    <a href="#">СЕО</a>
+                </li>
+                <li>
+                    <a href="#">Аналитика</a>
+                </li>
+                <li>
+                    <a href="#">настройки</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <main class="flx">
+
+
+    <aside>
+                <nav>
+                    <h4>Разделы сайта</h4>
+            <ul>
+                <li>
+                    <a href="/admin/home">главная</a>
+                </li>
+                <li>
+                    <a href="/admin/works">работы</a>
+                </li>
+                <li>
+                    <a href="/admin/articles">статьи</a>
+                </li>
+                <li>
+                    <a href="/admin/training">Обучение</a>
+                </li>
+                <li>
+                    <a href="/admin/video">видео</a>
+                </li>
+                <li>
+                    <a href="/admin/questions">вопросы и ответы</a>
+                </li>
+
+                <h4>Модерация</h4>
+
+                <li>
+                    <a href="/admin/users">пользователи</a>
+                </li>
+                <li>
+                    <a href="/admin/orders">оплата</a>
+                </li>
+                <li>
+                    <a href="/admin/seo">СЕО</a>
+                </li>
+                <li>
+                    <a href="/admin/analytics">Аналитика</a>
+                </li>
+                <li>
+                    <a href="/admin/settings">настройки</a>
+                </li>
+
+            </ul>
+            
+        </nav>
+    </aside>
+
+    <div class="content">
+        
+        <div class="titles">
+            <h2>Курсы</h2>
+        </div>
+
+        <div class="titles">
+            <h3>Список всех курсов</h3>
+        </div>
+
+        <div class="editing flx">
+            
+            <div class="add-button">
+                <a href="/new" class="add btnn">Новая</a>
+            </div>
+
+            <div class="delete-button">
+                <a href="/new" class="delete btnn">Удалить отмеченное</a>
+            </div>
+
+
+        </div>
+
+        <table class="admin-table">
+            <tr class="table-heading">
+                <td>id</td>
+                <td>картинка</td>
+                <td>название</td>
+                <td>описание</td>
+                <td>стоимость</td>
+                <td>редактирование</td>
+                <td>отметить</td>
+            </tr>
+            
+            <tr>
+                <td># 1</td>
+                <td>
+                    <img src="../../freud.jpg" alt="">
+                </td>
+                <td>Введение В Психоанализ</td>
+                <td class="table-text">Зигмунд Фрейд (Сигизмунд Шломо Фрейд) (1856 – 1939) - австрийский врач и психолог, основатель теории и метода лечения...</td>
+                <td>25 000 рублей</td>
+                <td class="edit">
+                    <i class="fa fa-edit"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <input type="checkbox" name="" id="">
+                </td>
+            </tr>
+
+            
+            
+            <tr>
+                <td># 2</td>
+                <td>
+                    <img src="../../freud.jpg" alt="">
+                </td>
+                <td>Введение В Психоанализ</td>
+                <td class="table-text">Зигмунд Фрейд (Сигизмунд Шломо Фрейд) (1856 – 1939) - австрийский врач и психолог, основатель теории и метода лечения...</td>
+                <td>25 000 рублей</td>
+                <td class="edit">
+                    <i class="fa fa-edit"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <input type="checkbox" name="" id="">
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td># 3</td>
+                <td>
+                    <img src="../../freud.jpg" alt="">
+                </td>
+                <td>Введение В Психоанализ</td>
+                <td class="table-text">Зигмунд Фрейд (Сигизмунд Шломо Фрейд) (1856 – 1939) - австрийский врач и психолог, основатель теории и метода лечения...</td>
+                <td>25 000 рублей</td>
+                <td class="edit">
+                    <i class="fa fa-edit"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <input type="checkbox" name="" id="">
+                </td>
+            </tr>
+
+
+
+        </table>
+
+        
+    </div>
+
+    </main>
+
+</body>
+</html>

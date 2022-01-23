@@ -1,0 +1,27 @@
+<%- include('layouts/header') %>
+    <main>
+        <%- include('layouts/aside') %>
+        <div class="content">
+            
+            <% for(var i=0; i<data.length; i++) {%>
+                <a href="/articles/<%= data[i].id %>" class="post-link">
+                    <div class="post">
+                        <div class="post-content flx">
+                            <div class="photo">
+                                <img src="<%= data[i].image %>" alt="">
+                            </div>
+                            <div class="body">
+                                <div class="title"><%= data[i].title %></div>
+                                <p><%= data[i].content %></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <% } %>
+
+
+            
+        </div>
+    </main>
+</body>
+</html>

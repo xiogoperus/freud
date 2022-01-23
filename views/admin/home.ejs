@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header class="admin-header flx">
+        
+        <div class="logo">
+            <h1>Админ панель</h1>
+        </div>
+
+       
+
+    </header>
+    
+    <main class="flx admin-main">
+
+
+    <%- include('../layouts/admin-aside') %>
+
+    <div class="content">
+        
+        <div class="titles">
+            <h2>Заголовок сайта</h2>
+            <form action="/admin/header/change" method="post">
+                <div class="inputs">
+                    <input type="text" name="heading" placeholder="Заголовок сайта" value="Метод Фрейда">
+                    <button>Изменить</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="titles">
+            <h2>Главная страница</h2>
+        </div>
+
+        <div class="titles">
+            <h3>Текст на главной странице</h3>
+        </div>
+
+        <div class="text-area">
+
+            <form action="/admin/home/add" method="post">
+
+            <div class="inputs">
+                <h4>Заголовок</h4>
+                <input name="title" type="text" value="О нас">
+            </div>
+
+            <div class="inputs">
+                <h4>Текст</h4>
+                <textarea name="content" id="" cols="30" rows="10">Метод Фрейда это сообщество психоаналитиков и проект, предоставляющий максимально полную информацию о Зигмунде Фрейде, Данный сайт является главным источником и сборником всех работ Зигмунда Фрейда в интернете Это не просто библиотека или сборник статей и работ великого ученого, У нас есть образовательный портал для желающих познать науку о человеческой душе Кроме того, мы проводим психоаналитическую работу с вами онлайн, Лучшие психотерапевты СНГ ответят на ваши вопросы, дадут всеобъемлющую консультацию по каждому вопросу, а также окажут максимальную поддержку и помощь Вам в решении Ваших вопросов и проблем
+
+    Добро пожаловать в крупнейшее сообщество психоаналитиков в интернете!
+                </textarea>
+            </div>
+            <div class="inputs">
+                <button>Опубликовать</button>
+            </div>
+        </form>
+        </div>
+
+
+        
+    </div>
+
+    </main>
+
+</body>
+</html>
